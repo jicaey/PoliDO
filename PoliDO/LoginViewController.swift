@@ -22,6 +22,14 @@ class LoginViewController: UIViewController {
     @IBAction func loginButton(_ sender: UIButton) {
     }
     
+    @IBAction func registerButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func forgotPasswordButton(_ sender: UIButton) {
+    }
+    
+    
+    
     /*
      // MARK: - Navigation
      

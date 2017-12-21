@@ -15,6 +15,8 @@
 		7048B83C1FE9A3510099258A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7048B83A1FE9A3510099258A /* LaunchScreen.storyboard */; };
 		7048B8441FE9AED70099258A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048B8431FE9AED70099258A /* Constants.swift */; };
 		707857F71FEC4EC200AA5E2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707857F61FEC4EC200AA5E2C /* LoginViewController.swift */; };
+		707857F91FEC536D00AA5E2C /* Apex New Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 707857F81FEC531500AA5E2C /* Apex New Book.otf */; };
+		707857FB1FEC538100AA5E2C /* Apex New Book Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 707857FA1FEC538100AA5E2C /* Apex New Book Italic.otf */; };
 		70B7B3D21FEC4695008C2A7B /* Apex New Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70B7B3CF1FEC42E2008C2A7B /* Apex New Light.otf */; };
 		70B7B3D31FEC469A008C2A7B /* Apex New Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70B7B3D01FEC42F7008C2A7B /* Apex New Bold.otf */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 		7048B83D1FE9A3510099258A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7048B8431FE9AED70099258A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		707857F61FEC4EC200AA5E2C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		707857F81FEC531500AA5E2C /* Apex New Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Book.otf"; sourceTree = "<group>"; };
+		707857FA1FEC538100AA5E2C /* Apex New Book Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Book Italic.otf"; sourceTree = "<group>"; };
 		70B7B3CF1FEC42E2008C2A7B /* Apex New Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Light.otf"; sourceTree = "<group>"; };
 		70B7B3D01FEC42F7008C2A7B /* Apex New Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +85,8 @@
 		70B7B3D11FEC430E008C2A7B /* customFonts */ = {
 			isa = PBXGroup;
 			children = (
+				707857F81FEC531500AA5E2C /* Apex New Book.otf */,
+				707857FA1FEC538100AA5E2C /* Apex New Book Italic.otf */,
 				70B7B3CF1FEC42E2008C2A7B /* Apex New Light.otf */,
 				70B7B3D01FEC42F7008C2A7B /* Apex New Bold.otf */,
 			);
@@ -149,9 +155,11 @@
 			files = (
 				70B7B3D31FEC469A008C2A7B /* Apex New Bold.otf in Resources */,
 				7048B83C1FE9A3510099258A /* LaunchScreen.storyboard in Resources */,
+				707857FB1FEC538100AA5E2C /* Apex New Book Italic.otf in Resources */,
 				70B7B3D21FEC4695008C2A7B /* Apex New Light.otf in Resources */,
 				7048B8391FE9A3510099258A /* Assets.xcassets in Resources */,
 				7048B8341FE9A3510099258A /* Main.storyboard in Resources */,
+				707857F91FEC536D00AA5E2C /* Apex New Book.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
