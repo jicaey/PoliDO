@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uAX-nQ-gWH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VwQ-oM-3Nm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -132,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="-817" y="66"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="ja0-A4-cg7">
             <objects>
-                <viewController id="VwQ-oM-3Nm" sceneMemberID="viewController">
+                <viewController id="VwQ-oM-3Nm" customClass="RegisterViewController" customModule="PoliDO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qPQ-mD-DQL"/>
                         <viewControllerLayoutGuide type="bottom" id="hjj-L4-dSH"/>
@@ -143,8 +144,113 @@
                     <view key="view" contentMode="scaleToFill" id="MqV-2B-YWD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="KEg-8Z-tlm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OuX-h7-ywi">
+                                <rect key="frame" x="93.5" y="67.5" width="187.5" height="65"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaf-O2-9FS">
+                                <rect key="frame" x="150" y="162.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vaf-O2-9FS" secondAttribute="height" multiplier="1:1" id="7CH-d0-ZMz"/>
+                                </constraints>
+                                <state key="normal" image="addImageButtonBackground"/>
+                                <connections>
+                                    <action selector="addImageButton:" destination="VwQ-oM-3Nm" eventType="touchUpInside" id="df8-4O-gGH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="center" minimumFontSize="17" background="emailTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Ups-h3-6D6">
+                                <rect key="frame" x="38" y="270" width="300" height="26.5"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" background="passwordTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xkl-Ax-ds5">
+                                <rect key="frame" x="37.5" y="307" width="300" height="26.5"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CONFIRM PASSWORD" textAlignment="center" minimumFontSize="17" background="passwordTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="HmQ-GF-C6H">
+                                <rect key="frame" x="37" y="343.5" width="300" height="26.5"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ALIAS" textAlignment="center" minimumFontSize="17" background="aliasTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rSy-Sf-iea">
+                                <rect key="frame" x="37" y="383.5" width="300" height="26.5"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfS-KZ-yqX">
+                                <rect key="frame" x="94" y="431" width="187.5" height="38.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VfS-KZ-yqX" secondAttribute="height" multiplier="44:9" id="bb8-hd-ypu"/>
+                                </constraints>
+                                <state key="normal" image="addLocationButtonBackground"/>
+                                <connections>
+                                    <action selector="addLocationButton:" destination="VwQ-oM-3Nm" eventType="touchUpInside" id="iwv-LD-ITu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ml3-oy-xFO">
+                                <rect key="frame" x="37.5" y="543.5" width="300" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ml3-oy-xFO" secondAttribute="height" multiplier="141:22" id="UxB-kt-bKw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="20"/>
+                                <state key="normal" title="Submit" backgroundImage="submitButtonBackground">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="VwQ-oM-3Nm" eventType="touchUpInside" id="sal-JI-Abk"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HmQ-GF-C6H" firstAttribute="width" secondItem="MqV-2B-YWD" secondAttribute="width" multiplier="0.8" id="4P2-b7-CCa"/>
+                            <constraint firstItem="xkl-Ax-ds5" firstAttribute="centerX" secondItem="MqV-2B-YWD" secondAttribute="centerX" id="5yp-PK-80A"/>
+                            <constraint firstItem="KEg-8Z-tlm" firstAttribute="centerX" secondItem="MqV-2B-YWD" secondAttribute="centerXWithinMargins" id="8ts-8U-z7M"/>
+                            <constraint firstItem="KEg-8Z-tlm" firstAttribute="centerY" secondItem="MqV-2B-YWD" secondAttribute="centerYWithinMargins" id="Amu-bn-KjC"/>
+                            <constraint firstItem="HmQ-GF-C6H" firstAttribute="height" secondItem="MqV-2B-YWD" secondAttribute="height" multiplier="0.04" id="Cbj-fI-cxS"/>
+                            <constraint firstItem="OuX-h7-ywi" firstAttribute="width" secondItem="MqV-2B-YWD" secondAttribute="width" multiplier="0.5" id="F17-Pi-Z6t"/>
+                            <constraint firstItem="HmQ-GF-C6H" firstAttribute="centerX" secondItem="MqV-2B-YWD" secondAttribute="centerX" id="Grl-IW-Yc9"/>
+                            <constraint firstItem="KEg-8Z-tlm" firstAttribute="width" secondItem="MqV-2B-YWD" secondAttribute="width" id="Idz-0w-XT0"/>
+                            <constraint firstItem="rSy-Sf-iea" firstAttribute="height" secondItem="MqV-2B-YWD" secondAttribute="height" multiplier="0.04" id="K1n-SP-apb"/>
+                            <constraint firstItem="rSy-Sf-iea" firstAttribute="centerY" secondItem="MqV-2B-YWD" secondAttribute="centerY" multiplier="1.19" id="MOd-36-Qfj"/>
+                            <constraint firstItem="VfS-KZ-yqX" firstAttribute="centerX" secondItem="MqV-2B-YWD" secondAttribute="centerX" id="Mvw-kM-Dp5"/>
+                            <constraint firstItem="xkl-Ax-ds5" firstAttribute="height" secondItem="MqV-2B-YWD" secondAttribute="height" multiplier="0.04" id="MwE-Fz-rzJ"/>
+                            <constraint firstItem="Ups-h3-6D6" firstAttribute="width" secondItem="MqV-2B-YWD" secondAttribute="width" multiplier="0.8" id="NQv-eJ-a7Q"/>
+                            <constraint firstItem="Ups-h3-6D6" firstAttribute="centerY" secondItem="MqV-2B-YWD" secondAttribute="centerY" multiplier="0.85" id="R7d-hc-bbl"/>
+                            <constraint firstItem="OuX-h7-ywi" firstAttribute="centerX" secondItem="MqV-2B-YWD" secondAttribute="centerX" id="RmZ-o9-kTm"/>
+                            <constraint firstItem="vaf-O2-9FS" firstAttribute="centerY" secondItem="MqV-2B-YWD" secondAttribute="centerY" multiplier="0.6" id="Ryo-dw-3SS"/>
+                            <constraint firstItem="xkl-Ax-ds5" firstAttribute="width" secondItem="MqV-2B-YWD" secondAttribute="width" multiplier="0.8" id="W42-fc-sUv"/>
+                            <constraint firstItem="Ups-h3-6D6" firstAttribute="height" secondItem="MqV-2B-YWD" secondAttribute="height" multiplier="0.04" id="WmG-Ul-FmO"/>
+                            <constraint firstItem="rSy-Sf-iea" firstAttribute="width" secondItem="MqV-2B-YWD" secondAttribute="width" multiplier="0.8" id="XOn-kc-fri"/>
+                            <constraint firstItem="VfS-KZ-yqX" firstAttribute="width" secondItem="MqV-2B-YWD" secondAttribute="width" multiplier="0.5" id="Xq1-7X-ltJ"/>
+                            <constraint firstItem="HmQ-GF-C6H" firstAttribute="centerY" secondItem="MqV-2B-YWD" secondAttribute="centerY" multiplier="1.07" id="czv-46-My8"/>
+                            <constraint firstItem="OuX-h7-ywi" firstAttribute="centerY" secondItem="MqV-2B-YWD" secondAttribute="centerY" multiplier="0.3" id="fo4-h2-eIA"/>
+                            <constraint firstItem="Ml3-oy-xFO" firstAttribute="centerY" secondItem="MqV-2B-YWD" secondAttribute="centerY" multiplier="1.7" id="fwf-zL-3Lq"/>
+                            <constraint firstItem="KEg-8Z-tlm" firstAttribute="height" secondItem="MqV-2B-YWD" secondAttribute="height" id="g37-0W-4XH"/>
+                            <constraint firstItem="Ml3-oy-xFO" firstAttribute="centerX" secondItem="MqV-2B-YWD" secondAttribute="centerX" id="g58-il-7L6"/>
+                            <constraint firstItem="rSy-Sf-iea" firstAttribute="centerX" secondItem="MqV-2B-YWD" secondAttribute="centerX" id="hR0-nU-wMu"/>
+                            <constraint firstItem="VfS-KZ-yqX" firstAttribute="centerY" secondItem="MqV-2B-YWD" secondAttribute="centerY" multiplier="1.35" id="hqH-Gm-uZt"/>
+                            <constraint firstItem="Ups-h3-6D6" firstAttribute="centerX" secondItem="MqV-2B-YWD" secondAttribute="centerX" id="pLN-Ba-Ifd"/>
+                            <constraint firstItem="vaf-O2-9FS" firstAttribute="centerX" secondItem="MqV-2B-YWD" secondAttribute="centerX" id="uPZ-uU-dG8"/>
+                            <constraint firstItem="xkl-Ax-ds5" firstAttribute="centerY" secondItem="MqV-2B-YWD" secondAttribute="centerY" multiplier="0.96" id="ugN-i3-q5T"/>
+                            <constraint firstItem="Ml3-oy-xFO" firstAttribute="width" secondItem="MqV-2B-YWD" secondAttribute="width" multiplier="0.8" id="xbO-Qs-SsP"/>
+                            <constraint firstItem="vaf-O2-9FS" firstAttribute="width" secondItem="MqV-2B-YWD" secondAttribute="width" multiplier="0.2" id="zCB-ix-otj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aliasTextField" destination="rSy-Sf-iea" id="yWS-Mm-JC6"/>
+                        <outlet property="confirmPasswordTextField" destination="HmQ-GF-C6H" id="V1j-Af-qQN"/>
+                        <outlet property="emailTextField" destination="Ups-h3-6D6" id="9RX-SY-QnA"/>
+                        <outlet property="passwordTextField" destination="xkl-Ax-ds5" id="TBK-X8-qmk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dx3-YN-7j4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,9 +258,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addImageButtonBackground" width="78" height="78"/>
+        <image name="addLocationButtonBackground" width="176" height="36"/>
+        <image name="aliasTextFieldBackground" width="281" height="25"/>
         <image name="backgroundImage" width="375" height="667"/>
+        <image name="emailTextFieldBackground" width="281" height="20"/>
         <image name="loginButtonBackground" width="281" height="43"/>
         <image name="logo" width="177" height="65"/>
+        <image name="passwordTextFieldBackground" width="281" height="25"/>
+        <image name="submitButtonBackground" width="282" height="44"/>
         <image name="textFieldBackground" width="281" height="43"/>
     </resources>
 </document>
