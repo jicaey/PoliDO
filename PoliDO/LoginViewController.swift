@@ -16,8 +16,16 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // TODO: change textFields placeholder text color to white
+        setupTextFields()
     }
+  
+    // TODO: impressive abstraction?
+    func setupTextFields() {
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email Address", attributes: [NSForegroundColorAttributeName: UIColor.white])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "••••••••••", attributes: [NSForegroundColorAttributeName: UIColor.white])
+        
+    }
+
     
     @IBAction func loginButton(_ sender: UIButton) {
     }
