@@ -15,17 +15,18 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var aliasTextField: UITextField!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupTextFields()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // TODO: impressive abstraction?
+    func setupTextFields() {
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName: UIColor.white])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "••••••••••", attributes: [NSForegroundColorAttributeName: UIColor.white])
+        confirmPasswordTextField.attributedPlaceholder = NSAttributedString(string: "CONFIRM PASSWORD", attributes: [NSForegroundColorAttributeName: UIColor.white])
+        aliasTextField.attributedPlaceholder = NSAttributedString(string: "ALIAS", attributes: [NSForegroundColorAttributeName: UIColor.white])
     }
     
     
