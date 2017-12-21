@@ -14,8 +14,9 @@
 		7048B8391FE9A3510099258A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7048B8381FE9A3510099258A /* Assets.xcassets */; };
 		7048B83C1FE9A3510099258A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7048B83A1FE9A3510099258A /* LaunchScreen.storyboard */; };
 		7048B8441FE9AED70099258A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048B8431FE9AED70099258A /* Constants.swift */; };
-		70B700191FEC35BC00B375C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B700181FEC35BC00B375C8 /* LoginViewController.swift */; };
-		70B7001B1FEC35E400B375C8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B7001A1FEC35E400B375C8 /* RegisterViewController.swift */; };
+		707857F71FEC4EC200AA5E2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707857F61FEC4EC200AA5E2C /* LoginViewController.swift */; };
+		70B7B3D21FEC4695008C2A7B /* Apex New Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70B7B3CF1FEC42E2008C2A7B /* Apex New Light.otf */; };
+		70B7B3D31FEC469A008C2A7B /* Apex New Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70B7B3D01FEC42F7008C2A7B /* Apex New Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,9 @@
 		7048B83B1FE9A3510099258A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7048B83D1FE9A3510099258A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7048B8431FE9AED70099258A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		70B700181FEC35BC00B375C8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
-		70B7001A1FEC35E400B375C8 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		707857F61FEC4EC200AA5E2C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		70B7B3CF1FEC42E2008C2A7B /* Apex New Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Light.otf"; sourceTree = "<group>"; };
+		70B7B3D01FEC42F7008C2A7B /* Apex New Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				7048B82E1FE9A3510099258A /* AppDelegate.swift */,
-				70B700181FEC35BC00B375C8 /* LoginViewController.swift */,
-				70B7001A1FEC35E400B375C8 /* RegisterViewController.swift */,
+				707857F61FEC4EC200AA5E2C /* LoginViewController.swift */,
 				7048B8301FE9A3510099258A /* HomeViewController.swift */,
 				7048B8431FE9AED70099258A /* Constants.swift */,
 				7048B8321FE9A3510099258A /* Main.storyboard */,
@@ -72,8 +73,18 @@
 				7048B83A1FE9A3510099258A /* LaunchScreen.storyboard */,
 				7048B83D1FE9A3510099258A /* Info.plist */,
 				7048B8351FE9A3510099258A /* PoliDO.xcdatamodeld */,
+				70B7B3D11FEC430E008C2A7B /* customFonts */,
 			);
 			path = PoliDO;
+			sourceTree = "<group>";
+		};
+		70B7B3D11FEC430E008C2A7B /* customFonts */ = {
+			isa = PBXGroup;
+			children = (
+				70B7B3CF1FEC42E2008C2A7B /* Apex New Light.otf */,
+				70B7B3D01FEC42F7008C2A7B /* Apex New Bold.otf */,
+			);
+			name = customFonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B7B3D31FEC469A008C2A7B /* Apex New Bold.otf in Resources */,
 				7048B83C1FE9A3510099258A /* LaunchScreen.storyboard in Resources */,
+				70B7B3D21FEC4695008C2A7B /* Apex New Light.otf in Resources */,
 				7048B8391FE9A3510099258A /* Assets.xcassets in Resources */,
 				7048B8341FE9A3510099258A /* Main.storyboard in Resources */,
 			);
@@ -152,8 +165,7 @@
 				7048B8311FE9A3510099258A /* HomeViewController.swift in Sources */,
 				7048B8371FE9A3510099258A /* PoliDO.xcdatamodeld in Sources */,
 				7048B82F1FE9A3510099258A /* AppDelegate.swift in Sources */,
-				70B7001B1FEC35E400B375C8 /* RegisterViewController.swift in Sources */,
-				70B700191FEC35BC00B375C8 /* LoginViewController.swift in Sources */,
+				707857F71FEC4EC200AA5E2C /* LoginViewController.swift in Sources */,
 				7048B8441FE9AED70099258A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

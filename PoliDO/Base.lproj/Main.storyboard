@@ -1,26 +1,100 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uAX-nQ-gWH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Apex New Light.otf">
+            <string>ApexNew-Light</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Login View Controller-->
+        <scene sceneID="hAA-Ul-SDy">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uAX-nQ-gWH" customClass="LoginViewController" customModule="PoliDO" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="4gk-YL-FT8"/>
+                        <viewControllerLayoutGuide type="bottom" id="i5S-GK-hKL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="xLb-fX-IGj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="KFi-DM-fQw">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7uu-Na-Hd4">
+                                <rect key="frame" x="94.5" y="167.5" width="187.5" height="65"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="center" minimumFontSize="17" background="textFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="1G1-0W-fEc">
+                                <rect key="frame" x="37.5" y="276.5" width="300" height="47"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="••••••••" textAlignment="center" minimumFontSize="17" background="textFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Hwk-62-are">
+                                <rect key="frame" x="37" y="343.5" width="300" height="47"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKp-QQ-ml2">
+                                <rect key="frame" x="38" y="410" width="300" height="47"/>
+                                <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="19"/>
+                                <state key="normal" title="Login" backgroundImage="loginButtonBackground">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="uAX-nQ-gWH" eventType="touchUpInside" id="St6-Im-2mQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CKp-QQ-ml2" firstAttribute="width" secondItem="xLb-fX-IGj" secondAttribute="width" multiplier="0.8" id="4gs-dh-gt9"/>
+                            <constraint firstItem="KFi-DM-fQw" firstAttribute="centerX" secondItem="xLb-fX-IGj" secondAttribute="centerXWithinMargins" id="6pI-QJ-xWd"/>
+                            <constraint firstItem="KFi-DM-fQw" firstAttribute="width" secondItem="xLb-fX-IGj" secondAttribute="width" id="7CK-Hy-p8D"/>
+                            <constraint firstItem="1G1-0W-fEc" firstAttribute="height" secondItem="xLb-fX-IGj" secondAttribute="height" multiplier="0.07" id="7as-B9-QWA"/>
+                            <constraint firstItem="KFi-DM-fQw" firstAttribute="height" secondItem="xLb-fX-IGj" secondAttribute="height" id="ABI-AI-k7i"/>
+                            <constraint firstItem="7uu-Na-Hd4" firstAttribute="width" secondItem="xLb-fX-IGj" secondAttribute="width" multiplier="0.5" id="DMH-zk-Hoz"/>
+                            <constraint firstItem="Hwk-62-are" firstAttribute="height" secondItem="xLb-fX-IGj" secondAttribute="height" multiplier="0.07" id="Q7D-cR-wlc"/>
+                            <constraint firstItem="Hwk-62-are" firstAttribute="width" secondItem="xLb-fX-IGj" secondAttribute="width" multiplier="0.8" id="QDN-pl-JPS"/>
+                            <constraint firstItem="KFi-DM-fQw" firstAttribute="centerY" secondItem="xLb-fX-IGj" secondAttribute="centerYWithinMargins" id="RcY-UW-sXm"/>
+                            <constraint firstItem="CKp-QQ-ml2" firstAttribute="height" secondItem="xLb-fX-IGj" secondAttribute="height" multiplier="0.07" id="Xok-SB-F5v"/>
+                            <constraint firstItem="7uu-Na-Hd4" firstAttribute="centerX" secondItem="xLb-fX-IGj" secondAttribute="centerX" id="gRh-fm-1WK"/>
+                            <constraint firstItem="1G1-0W-fEc" firstAttribute="centerY" secondItem="xLb-fX-IGj" secondAttribute="centerY" multiplier="0.9" id="hgC-vw-4h2"/>
+                            <constraint firstItem="CKp-QQ-ml2" firstAttribute="centerX" secondItem="xLb-fX-IGj" secondAttribute="centerX" id="i5Y-LS-aep"/>
+                            <constraint firstItem="1G1-0W-fEc" firstAttribute="centerX" secondItem="xLb-fX-IGj" secondAttribute="centerX" id="ifH-E2-yah"/>
+                            <constraint firstItem="7uu-Na-Hd4" firstAttribute="centerY" secondItem="xLb-fX-IGj" secondAttribute="centerY" multiplier="0.6" id="kcS-Kd-3AR"/>
+                            <constraint firstItem="Hwk-62-are" firstAttribute="centerY" secondItem="xLb-fX-IGj" secondAttribute="centerY" multiplier="1.1" id="uDm-Qo-eki"/>
+                            <constraint firstItem="CKp-QQ-ml2" firstAttribute="centerY" secondItem="xLb-fX-IGj" secondAttribute="centerY" multiplier="1.3" id="uJu-kl-g66"/>
+                            <constraint firstItem="Hwk-62-are" firstAttribute="centerX" secondItem="xLb-fX-IGj" secondAttribute="centerX" id="xPr-tQ-wHa"/>
+                            <constraint firstItem="1G1-0W-fEc" firstAttribute="width" secondItem="xLb-fX-IGj" secondAttribute="width" multiplier="0.8" id="zM9-0K-FNz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="1G1-0W-fEc" id="J85-N0-wnf"/>
+                        <outlet property="passwordTextField" destination="Hwk-62-are" id="m0I-XJ-Ruj"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZn-pO-vzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-817" y="66"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backgroundImage" width="375" height="667"/>
+        <image name="loginButtonBackground" width="281" height="43"/>
+        <image name="logo" width="177" height="65"/>
+        <image name="textFieldBackground" width="281" height="43"/>
+    </resources>
 </document>
