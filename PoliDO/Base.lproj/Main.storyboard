@@ -161,25 +161,25 @@
                                     <action selector="addImageButton:" destination="VwQ-oM-3Nm" eventType="touchUpInside" id="df8-4O-gGH"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="center" minimumFontSize="17" background="emailTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Ups-h3-6D6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" minimumFontSize="17" background="emailTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Ups-h3-6D6">
                                 <rect key="frame" x="38" y="270" width="300" height="26.5"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" background="passwordTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xkl-Ax-ds5">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" minimumFontSize="17" background="passwordTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xkl-Ax-ds5">
                                 <rect key="frame" x="37.5" y="307" width="300" height="26.5"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CONFIRM PASSWORD" textAlignment="center" minimumFontSize="17" background="passwordTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="HmQ-GF-C6H">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CONFIRM PASSWORD" minimumFontSize="17" background="passwordTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="HmQ-GF-C6H">
                                 <rect key="frame" x="37" y="343.5" width="300" height="26.5"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ALIAS" textAlignment="center" minimumFontSize="17" background="aliasTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rSy-Sf-iea">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ALIAS" minimumFontSize="17" background="aliasTextFieldBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rSy-Sf-iea">
                                 <rect key="frame" x="37" y="383.5" width="300" height="26.5"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="14"/>
