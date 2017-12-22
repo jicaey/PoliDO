@@ -20,6 +20,7 @@
 		707857FD1FEC68B500AA5E2C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707857FC1FEC68B500AA5E2C /* RegisterViewController.swift */; };
 		70B7B3D21FEC4695008C2A7B /* Apex New Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70B7B3CF1FEC42E2008C2A7B /* Apex New Light.otf */; };
 		70B7B3D31FEC469A008C2A7B /* Apex New Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70B7B3D01FEC42F7008C2A7B /* Apex New Bold.otf */; };
+		70F636D41FEC87BC00A81AC8 /* RepresentativeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F636D31FEC87BC00A81AC8 /* RepresentativeCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		707857FC1FEC68B500AA5E2C /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		70B7B3CF1FEC42E2008C2A7B /* Apex New Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Light.otf"; sourceTree = "<group>"; };
 		70B7B3D01FEC42F7008C2A7B /* Apex New Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Bold.otf"; sourceTree = "<group>"; };
+		70F636D31FEC87BC00A81AC8 /* RepresentativeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepresentativeCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				707857FC1FEC68B500AA5E2C /* RegisterViewController.swift */,
 				7048B8301FE9A3510099258A /* HomeViewController.swift */,
 				7048B8431FE9AED70099258A /* Constants.swift */,
+				70F636D31FEC87BC00A81AC8 /* RepresentativeCollectionViewController.swift */,
 				7048B8321FE9A3510099258A /* Main.storyboard */,
 				7048B8381FE9A3510099258A /* Assets.xcassets */,
 				7048B83A1FE9A3510099258A /* LaunchScreen.storyboard */,
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F636D41FEC87BC00A81AC8 /* RepresentativeCollectionViewController.swift in Sources */,
 				7048B8311FE9A3510099258A /* HomeViewController.swift in Sources */,
 				7048B8371FE9A3510099258A /* PoliDO.xcdatamodeld in Sources */,
 				7048B82F1FE9A3510099258A /* AppDelegate.swift in Sources */,

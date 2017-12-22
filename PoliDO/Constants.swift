@@ -20,3 +20,8 @@ struct Color {
 struct Font {
     static let textField = UIFont.init(name: "Apex New Light", size: 17.0)
 }
+
+struct CellIdentifer {
+    static let repCollectionView = "RepCollectionViewCell"
+}
+

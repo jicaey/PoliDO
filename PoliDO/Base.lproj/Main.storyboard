@@ -268,15 +268,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeViewBackground" translatesAutoresizingMaskIntoConstraints="NO" id="sUK-ow-bTV">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeViewBackgroundLG" translatesAutoresizingMaskIntoConstraints="NO" id="wcv-eV-Gql">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-HC-e2f">
+                                <rect key="frame" x="0.0" y="153.5" width="375" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iJJ-iz-JL1">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RepCollectionViewCell" id="lZh-ro-Qr8">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qHO-DU-wip" id="ukP-zQ-KnZ"/>
+                                    <outlet property="delegate" destination="qHO-DU-wip" id="ZIV-RP-J9p"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="sUK-ow-bTV" firstAttribute="top" secondItem="OCW-Kw-ROQ" secondAttribute="bottom" id="UgW-rJ-To1"/>
-                            <constraint firstItem="sUK-ow-bTV" firstAttribute="leading" secondItem="UDq-y0-Ud1" secondAttribute="leading" id="i8O-ik-wgC"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="sUK-ow-bTV" secondAttribute="bottom" id="sdt-mW-sdo"/>
-                            <constraint firstAttribute="trailing" secondItem="sUK-ow-bTV" secondAttribute="trailing" id="zS6-9p-ASy"/>
+                            <constraint firstItem="wcv-eV-Gql" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" id="3kc-xQ-mnd"/>
+                            <constraint firstItem="wcv-eV-Gql" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" id="75O-7e-Y5i"/>
+                            <constraint firstItem="6N7-HC-e2f" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="Byc-60-Atr"/>
+                            <constraint firstItem="6N7-HC-e2f" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" id="JnK-HH-uQM"/>
+                            <constraint firstItem="6N7-HC-e2f" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.56" id="U12-vJ-TOr"/>
+                            <constraint firstItem="wcv-eV-Gql" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" id="muc-Fd-wWn"/>
+                            <constraint firstItem="6N7-HC-e2f" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.1" id="qiU-ZT-xXt"/>
+                            <constraint firstItem="wcv-eV-Gql" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="vCl-5S-UtA"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -291,7 +321,7 @@
         <image name="aliasTextFieldBackground" width="281" height="25"/>
         <image name="backgroundImage" width="375" height="667"/>
         <image name="emailTextFieldBackground" width="281" height="20"/>
-        <image name="homeViewBackground" width="375" height="664"/>
+        <image name="homeViewBackgroundLG" width="414" height="736"/>
         <image name="loginButtonBackground" width="281" height="43"/>
         <image name="logo" width="177" height="65"/>
         <image name="passwordTextFieldBackground" width="281" height="25"/>
