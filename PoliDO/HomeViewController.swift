@@ -15,6 +15,39 @@ class HomeViewController: UIViewController {
     }
 }
 
+
+// MARK: - BillsTableView
+class BillsTableViewCell: UITableViewCell {
+    @IBOutlet weak var billNameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+}
+
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifer.billsTableView, for: indexPath) as! BillsTableViewCell
+        
+        
+        tableView.backgroundColor = .clear
+        cell.contentView.backgroundColor = .clear
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        
+        cell.descriptionLabel.text = "bill dones the sand theng nns keaon djs ehiir kans neh wkne rkrit abhs jah e rhf sushd kdi kej whsy aksj rhttu s bshdyeu hasusdhge bill dones the sand theng nns keaon djs ehiir kans neh wkne rkrit abhs jah e rhf sushd kdi kej whsy aksj rhttu s bshdyeu hasusdhge"
+        cell.billNameLabel.text = "S723"
+        cell.dateLabel.text = "Nov 15, 1983"
+        
+        return cell
+    }
+}
+
+
+
+// MARK: - RepCollectionView
 class RepCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var repThumbnailImageView: UIImageView!
@@ -23,11 +56,6 @@ class RepCollectionViewCell: UICollectionViewCell {
 //        super.init(coder: aDecoder)
 //        
 //        setupViews()
-//    }
-//
-//
-//    func setupViews() {
-//
 //    }
 }
 
@@ -49,6 +77,8 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         cell.repThumbnailImageView.layer.cornerRadius = 3
         cell.repThumbnailImageView.clipsToBounds = true
+        
+        // Testing
         cell.repThumbnailImageView.image = Image.testImages[indexPath.item]
         
         return cell

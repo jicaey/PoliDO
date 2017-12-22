@@ -309,6 +309,64 @@
                                     <outlet property="delegate" destination="qHO-DU-wip" id="ZIV-RP-J9p"/>
                                 </connections>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fcE-Bj-c4x">
+                                <rect key="frame" x="19" y="457" width="337.5" height="86.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BillsTableViewCell" id="0XJ-lx-wmT" customClass="BillsTableViewCell" customModule="PoliDO" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="337.5" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0XJ-lx-wmT" id="i2Y-cj-ZRY">
+                                            <rect key="frame" x="0.0" y="0.0" width="337.5" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkd-F5-rxI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="67.5" height="22"/>
+                                                    <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="10"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYa-HC-91i">
+                                                    <rect key="frame" x="0.0" y="13" width="67.5" height="22"/>
+                                                    <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="10"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25H-2R-rbe">
+                                                    <rect key="frame" x="67.5" y="0.0" width="270" height="39.5"/>
+                                                    <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="wYa-HC-91i" firstAttribute="width" secondItem="i2Y-cj-ZRY" secondAttribute="width" multiplier="0.2" id="0pT-Jf-x3C"/>
+                                                <constraint firstItem="rkd-F5-rxI" firstAttribute="height" secondItem="i2Y-cj-ZRY" secondAttribute="height" multiplier="0.5" id="0sk-tj-HUj"/>
+                                                <constraint firstItem="wYa-HC-91i" firstAttribute="height" secondItem="i2Y-cj-ZRY" secondAttribute="height" multiplier="0.5" id="LAG-Hy-B0m"/>
+                                                <constraint firstItem="wYa-HC-91i" firstAttribute="bottom" secondItem="i2Y-cj-ZRY" secondAttribute="bottom" multiplier="0.8" id="RVj-s0-hUt"/>
+                                                <constraint firstItem="25H-2R-rbe" firstAttribute="bottom" secondItem="i2Y-cj-ZRY" secondAttribute="bottom" multiplier="0.9" id="ToU-Wv-RMy"/>
+                                                <constraint firstItem="wYa-HC-91i" firstAttribute="leading" secondItem="i2Y-cj-ZRY" secondAttribute="leading" id="a2U-6R-8Ry"/>
+                                                <constraint firstItem="rkd-F5-rxI" firstAttribute="top" secondItem="i2Y-cj-ZRY" secondAttribute="top" id="ivP-cR-HJV"/>
+                                                <constraint firstItem="25H-2R-rbe" firstAttribute="trailing" secondItem="i2Y-cj-ZRY" secondAttribute="trailing" id="jmn-9s-BaR"/>
+                                                <constraint firstItem="25H-2R-rbe" firstAttribute="top" secondItem="i2Y-cj-ZRY" secondAttribute="top" id="krd-Pk-XKH"/>
+                                                <constraint firstItem="25H-2R-rbe" firstAttribute="width" secondItem="i2Y-cj-ZRY" secondAttribute="width" multiplier="0.8" id="rGr-Cv-yNJ"/>
+                                                <constraint firstItem="rkd-F5-rxI" firstAttribute="width" secondItem="i2Y-cj-ZRY" secondAttribute="width" multiplier="0.2" id="rMc-C3-nmV"/>
+                                                <constraint firstItem="rkd-F5-rxI" firstAttribute="leading" secondItem="i2Y-cj-ZRY" secondAttribute="leading" id="vki-yH-Mn7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="billNameLabel" destination="rkd-F5-rxI" id="8XK-FJ-xlt"/>
+                                            <outlet property="dateLabel" destination="wYa-HC-91i" id="ZbW-Ld-VV7"/>
+                                            <outlet property="descriptionLabel" destination="25H-2R-rbe" id="8lc-yt-BZa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qHO-DU-wip" id="JYW-eh-0MZ"/>
+                                    <outlet property="delegate" destination="qHO-DU-wip" id="F3s-VK-weW"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -317,9 +375,13 @@
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="Byc-60-Atr"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" id="JnK-HH-uQM"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.56" id="U12-vJ-TOr"/>
+                            <constraint firstItem="fcE-Bj-c4x" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="XXD-yE-niT"/>
+                            <constraint firstItem="fcE-Bj-c4x" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.13" id="hr4-mT-WfV"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" id="muc-Fd-wWn"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.09" id="qiU-ZT-xXt"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="vCl-5S-UtA"/>
+                            <constraint firstItem="fcE-Bj-c4x" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="1.5" id="wAX-cR-WBb"/>
+                            <constraint firstItem="fcE-Bj-c4x" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" multiplier="0.9" id="yLY-14-bXp"/>
                         </constraints>
                     </view>
                 </viewController>
