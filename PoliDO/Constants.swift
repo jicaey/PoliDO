@@ -25,3 +25,15 @@ struct CellIdentifer {
     static let repCollectionView = "RepCollectionViewCell"
 }
 
+// MARK: - Test
+
+struct Image {
+    static let kitt = UIImage.init(named: "kitt")
+    static let trump = UIImage.init(named: "trump")
+    static let pence = UIImage.init(named: "pence")
+    static let guy = UIImage.init(named: "guy")
+    static let gill = UIImage.init(named: "gillibrand")
+    
+    static let testImages = [kitt, trump, pence, guy, gill, pence, guy, gill, kitt, trump, pence]
+}
+
