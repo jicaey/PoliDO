@@ -15,7 +15,6 @@
 		7048B83C1FE9A3510099258A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7048B83A1FE9A3510099258A /* LaunchScreen.storyboard */; };
 		7048B8441FE9AED70099258A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048B8431FE9AED70099258A /* Constants.swift */; };
 		70727CAC1FFAFF7F00767580 /* BillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70727CAB1FFAFF7F00767580 /* BillsTableViewCell.swift */; };
-		70727CAE1FFB079900767580 /* VotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70727CAD1FFB079900767580 /* VotesCollectionViewCell.swift */; };
 		707857F71FEC4EC200AA5E2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707857F61FEC4EC200AA5E2C /* LoginViewController.swift */; };
 		707857F91FEC536D00AA5E2C /* Apex New Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 707857F81FEC531500AA5E2C /* Apex New Book.otf */; };
 		707857FB1FEC538100AA5E2C /* Apex New Book Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 707857FA1FEC538100AA5E2C /* Apex New Book Italic.otf */; };
@@ -37,7 +36,6 @@
 		7048B83D1FE9A3510099258A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7048B8431FE9AED70099258A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		70727CAB1FFAFF7F00767580 /* BillsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BillsTableViewCell.swift; path = ../BillsTableViewCell.swift; sourceTree = "<group>"; };
-		70727CAD1FFB079900767580 /* VotesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VotesCollectionViewCell.swift; path = ../VotesCollectionViewCell.swift; sourceTree = "<group>"; };
 		707857F61FEC4EC200AA5E2C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		707857F81FEC531500AA5E2C /* Apex New Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Book.otf"; sourceTree = "<group>"; };
 		707857FA1FEC538100AA5E2C /* Apex New Book Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apex New Book Italic.otf"; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			children = (
 				70727CAB1FFAFF7F00767580 /* BillsTableViewCell.swift */,
 				70AF57461FFAEDBA0077136F /* RepCollectionViewCell.swift */,
-				70727CAD1FFB079900767580 /* VotesCollectionViewCell.swift */,
 				7048B8321FE9A3510099258A /* Main.storyboard */,
 				7048B83A1FE9A3510099258A /* LaunchScreen.storyboard */,
 			);
@@ -205,7 +202,6 @@
 				70AF57471FFAEDBA0077136F /* RepCollectionViewCell.swift in Sources */,
 				7048B8371FE9A3510099258A /* PoliDO.xcdatamodeld in Sources */,
 				70AF57451FFAE50B0077136F /* Extensions.swift in Sources */,
-				70727CAE1FFB079900767580 /* VotesCollectionViewCell.swift in Sources */,
 				7048B82F1FE9A3510099258A /* AppDelegate.swift in Sources */,
 				707857FD1FEC68B500AA5E2C /* RegisterViewController.swift in Sources */,
 				707857F71FEC4EC200AA5E2C /* LoginViewController.swift in Sources */,

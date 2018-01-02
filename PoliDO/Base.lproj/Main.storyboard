@@ -268,7 +268,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeViewBackgroundLG" translatesAutoresizingMaskIntoConstraints="NO" id="wcv-eV-Gql">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="wcv-eV-Gql">
                                 <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-HC-e2f" userLabel="Rep Collection View">
@@ -310,8 +310,9 @@
                                 </connections>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fcE-Bj-c4x">
-                                <rect key="frame" x="19" y="457" width="337.5" height="86.5"/>
+                                <rect key="frame" x="19" y="473.5" width="337.5" height="173.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BillsTableViewCell" id="0XJ-lx-wmT" customClass="BillsTableViewCell" customModule="PoliDO" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="337.5" height="44"/>
@@ -368,83 +369,6 @@
                                     <outlet property="delegate" destination="qHO-DU-wip" id="F3s-VK-weW"/>
                                 </connections>
                             </tableView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8rr-cx-0Ba" userLabel="Votes Collection View">
-                                <rect key="frame" x="-0.5" y="570" width="375" height="93.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mkj-dv-RrW">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VotesCollectionViewCell" id="JFO-7t-30u" customClass="VotesCollectionViewCell" customModule="PoliDO" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycV-C4-tpn">
-                                                    <rect key="frame" x="5" y="2.5" width="40" height="10"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="10"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flg-1s-ftX">
-                                                    <rect key="frame" x="4.5" y="12.5" width="40" height="10"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="10"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wM-41-OqU">
-                                                    <rect key="frame" x="4.5" y="37.5" width="40" height="10"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="10"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voted:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-HE-GfP">
-                                                    <rect key="frame" x="5" y="27.5" width="40" height="10"/>
-                                                    <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="10"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="2wM-41-OqU" firstAttribute="height" secondItem="JFO-7t-30u" secondAttribute="height" multiplier="0.2" id="7Mw-sY-UZ7"/>
-                                            <constraint firstItem="Flg-1s-ftX" firstAttribute="width" secondItem="JFO-7t-30u" secondAttribute="width" multiplier="0.8" id="N8a-7f-9cq"/>
-                                            <constraint firstItem="Flg-1s-ftX" firstAttribute="centerY" secondItem="JFO-7t-30u" secondAttribute="centerY" multiplier="0.7" id="PFI-ed-Be0"/>
-                                            <constraint firstItem="ILW-HE-GfP" firstAttribute="centerY" secondItem="JFO-7t-30u" secondAttribute="centerY" multiplier="1.3" id="Y5Z-pD-MD6"/>
-                                            <constraint firstItem="ycV-C4-tpn" firstAttribute="width" secondItem="JFO-7t-30u" secondAttribute="width" multiplier="0.8" id="ZNv-NA-E9l"/>
-                                            <constraint firstItem="ycV-C4-tpn" firstAttribute="centerX" secondItem="JFO-7t-30u" secondAttribute="centerX" id="gwL-kP-NEt"/>
-                                            <constraint firstItem="ycV-C4-tpn" firstAttribute="height" secondItem="JFO-7t-30u" secondAttribute="height" multiplier="0.2" id="l0G-vD-iQE"/>
-                                            <constraint firstItem="Flg-1s-ftX" firstAttribute="centerX" secondItem="JFO-7t-30u" secondAttribute="centerX" id="lQA-2O-VZC"/>
-                                            <constraint firstItem="Flg-1s-ftX" firstAttribute="height" secondItem="JFO-7t-30u" secondAttribute="height" multiplier="0.2" id="n9U-vG-RFe"/>
-                                            <constraint firstItem="2wM-41-OqU" firstAttribute="centerX" secondItem="JFO-7t-30u" secondAttribute="centerX" id="nT9-RP-vOP"/>
-                                            <constraint firstItem="2wM-41-OqU" firstAttribute="centerY" secondItem="JFO-7t-30u" secondAttribute="centerY" multiplier="1.7" id="noI-0G-gMY"/>
-                                            <constraint firstItem="ILW-HE-GfP" firstAttribute="centerX" secondItem="JFO-7t-30u" secondAttribute="centerX" id="qZh-sG-fub"/>
-                                            <constraint firstItem="ycV-C4-tpn" firstAttribute="centerY" secondItem="JFO-7t-30u" secondAttribute="centerY" multiplier="0.3" id="rS6-d7-eRq"/>
-                                            <constraint firstItem="ILW-HE-GfP" firstAttribute="width" secondItem="JFO-7t-30u" secondAttribute="width" multiplier="0.8" id="sha-8Z-38H"/>
-                                            <constraint firstItem="ILW-HE-GfP" firstAttribute="height" secondItem="JFO-7t-30u" secondAttribute="height" multiplier="0.2" id="vjT-qh-vmn"/>
-                                            <constraint firstItem="2wM-41-OqU" firstAttribute="width" secondItem="JFO-7t-30u" secondAttribute="width" multiplier="0.8" id="z18-xF-9GK"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="billDateLabel" destination="Flg-1s-ftX" id="Aki-Fv-29n"/>
-                                            <outlet property="billNumberLabel" destination="ycV-C4-tpn" id="Z3h-t0-dhU"/>
-                                            <outlet property="repDecisionLabel" destination="2wM-41-OqU" id="lfB-EW-rEn"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="qHO-DU-wip" id="4ke-8H-R8a"/>
-                                    <outlet property="delegate" destination="qHO-DU-wip" id="rOS-Sv-lso"/>
-                                </connections>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -452,17 +376,13 @@
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" id="75O-7e-Y5i"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="Byc-60-Atr"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" id="JnK-HH-uQM"/>
-                            <constraint firstItem="8rr-cx-0Ba" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" id="RIY-Mr-DFb"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.56" id="U12-vJ-TOr"/>
                             <constraint firstItem="fcE-Bj-c4x" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="XXD-yE-niT"/>
-                            <constraint firstItem="8rr-cx-0Ba" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="dnh-ji-7MK"/>
-                            <constraint firstItem="fcE-Bj-c4x" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.13" id="hr4-mT-WfV"/>
+                            <constraint firstItem="fcE-Bj-c4x" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.26" id="hr4-mT-WfV"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" id="muc-Fd-wWn"/>
-                            <constraint firstItem="8rr-cx-0Ba" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.14" id="pEr-0Y-UAc"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.09" id="qiU-ZT-xXt"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="vCl-5S-UtA"/>
-                            <constraint firstItem="8rr-cx-0Ba" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="1.85" id="vWK-n1-zVz"/>
-                            <constraint firstItem="fcE-Bj-c4x" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="1.5" id="wAX-cR-WBb"/>
+                            <constraint firstItem="fcE-Bj-c4x" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="1.68" id="wAX-cR-WBb"/>
                             <constraint firstItem="fcE-Bj-c4x" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" multiplier="0.9" id="yLY-14-bXp"/>
                         </constraints>
                     </view>
@@ -478,7 +398,7 @@
         <image name="aliasTextFieldBackground" width="281" height="25"/>
         <image name="backgroundImage" width="375" height="667"/>
         <image name="emailTextFieldBackground" width="281" height="20"/>
-        <image name="homeViewBackgroundLG" width="414" height="736"/>
+        <image name="homeBackgroundImage" width="414" height="736"/>
         <image name="loginButtonBackground" width="281" height="43"/>
         <image name="logo" width="177" height="65"/>
         <image name="passwordTextFieldBackground" width="281" height="25"/>
