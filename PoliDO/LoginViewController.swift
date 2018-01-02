@@ -19,10 +19,9 @@ class LoginViewController: UIViewController {
         setupTextFields()
     }
   
-    // TODO: impressive abstraction?
     func setupTextFields() {
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email Address", attributes: [NSForegroundColorAttributeName: UIColor.white])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "••••••••••", attributes: [NSForegroundColorAttributeName: UIColor.white])
+        emailTextField.updatePlaceholderColor()
+        passwordTextField.updatePlaceholderColor()
     }
 
     

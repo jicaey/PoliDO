@@ -17,31 +17,26 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
         setupTextFields()
     }
 
-    // TODO: impressive abstraction?
     func setupTextFields() {
-        // placeholder text to white
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName: UIColor.white])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "••••••••••", attributes: [NSForegroundColorAttributeName: UIColor.white])
-        confirmPasswordTextField.attributedPlaceholder = NSAttributedString(string: "CONFIRM PASSWORD", attributes: [NSForegroundColorAttributeName: UIColor.white])
-        aliasTextField.attributedPlaceholder = NSAttributedString(string: "ALIAS", attributes: [NSForegroundColorAttributeName: UIColor.white])
+        let textFields = [
+            emailTextField,
+            passwordTextField,
+            confirmPasswordTextField,
+            aliasTextField
+        ]
         
-        // indent text
-        indent(textField: emailTextField)
-        indent(textField: passwordTextField)
-        indent(textField: confirmPasswordTextField)
-        indent(textField: aliasTextField)
-    }
-    
-    func indent(textField: UITextField) {
-        let indentSize = textField.frame.height + 10
-        let indentView = UIView(frame: CGRect(x: 0, y: 0, width: indentSize, height: 20))
-        
-        textField.leftView = indentView
-        textField.leftViewMode = .always
+        for field in textFields {
+            field?.updatePlaceholderColor()
+            field?.indent()
+        }
     }
     
     
