@@ -24,6 +24,12 @@ struct Font {
 struct CellIdentifer {
     static let repCollectionView = "RepCollectionViewCell"
     static let billsTableView = "BillsTableViewCell"
+    static let votesCollectionView = "VotesCollectionViewCell"
+}
+
+struct Tag {
+    static let repCollectionView = 1
+    static let votesCollectionView = 2
 }
 
 // MARK: - Test

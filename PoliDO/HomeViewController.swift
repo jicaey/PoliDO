@@ -36,47 +36,74 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
 
 
 
-// MARK: - RepCollectionView
+// MARK: - RepCollectionView and VotesCollectionView
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     // MARK: UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Image.testImages.count
+        if collectionView.tag == Tag.repCollectionView {
+            return Image.testImages.count
+        } else {
+            return 20
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifer.repCollectionView, for: indexPath) as! RepCollectionViewCell
-        
-        // Testing
-        cell.contentView.backgroundColor = UIColor.green
-        
-        // TODO: Move
-        cell.repThumbnailImageView.image = Image.testImages[indexPath.item]
-        cell.repThumbnailImageView.layer.cornerRadius = 3
-        cell.repThumbnailImageView.clipsToBounds = true
-        
-        return cell
+        if collectionView.tag == Tag.repCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifer.repCollectionView, for: indexPath) as! RepCollectionViewCell
+            
+            // Testing
+            cell.contentView.backgroundColor = UIColor.green
+            
+            // TODO: Move
+            cell.repThumbnailImageView.image = Image.testImages[indexPath.item]
+            cell.repThumbnailImageView.layer.cornerRadius = 3
+            cell.repThumbnailImageView.clipsToBounds = true
+            
+            return cell
+
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifer.votesCollectionView, for: indexPath) as! VotesCollectionViewCell
+            
+            return cell
+        }
     }
     
     // MARK: UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = collectionView.frame.height
-        let cellSize = CGSize(width: size, height: size)
-
-        return cellSize
+        if collectionView.tag == Tag.repCollectionView {
+            let cellHeightWidth = collectionView.frame.height
+            let cellSize = CGSize(width: cellHeightWidth, height: cellHeightWidth)
+            
+            return cellSize
+        } else {
+            let cellHeight = collectionView.frame.height
+            let cellWidth = collectionView.frame.width / 5
+            let cellSize = CGSize(width: cellWidth, height: cellHeight)
+            
+            return cellSize
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let edge = collectionView.frame.height / 5
-        let insets = UIEdgeInsets(top: 0, left: edge, bottom: 0, right: edge)
-
-        return insets
+        if collectionView.tag == Tag.repCollectionView {
+            let edge = collectionView.frame.height / 5
+            let insets = UIEdgeInsets(top: 0, left: edge, bottom: 0, right: edge)
+            
+            return insets
+        } else {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        let spacing = collectionView.frame.height / 5
-        
-        return spacing
+        if collectionView.tag == Tag.repCollectionView {
+            let spacing = collectionView.frame.height / 5
+            
+            return spacing
+        } else {
+            return 0
+        }
     }
     
     // MARK: UICollectionViewDelegate
