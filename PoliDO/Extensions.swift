@@ -25,3 +25,9 @@ extension UITextField {
         self.leftViewMode = .always
     }
 }
+
+extension UITextView {
+    func update(text: String) {
+        self.text = text
+    }
+}

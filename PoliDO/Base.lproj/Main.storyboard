@@ -271,6 +271,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="wcv-eV-Gql">
                                 <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" bouncesZoom="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYu-uU-Zp0">
+                                <rect key="frame" x="10" y="363.5" width="356.5" height="66.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-HC-e2f" userLabel="Rep Collection View">
                                 <rect key="frame" x="0.0" y="157" width="375" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -316,17 +323,17 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BillsTableViewCell" id="0XJ-lx-wmT" customClass="BillsTableViewCell" customModule="PoliDO" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="337.5" height="80"/>
+                                        <rect key="frame" x="0.0" y="28" width="337" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0XJ-lx-wmT" id="i2Y-cj-ZRY">
                                             <rect key="frame" x="0.0" y="0.0" width="337.5" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" indicatorStyle="white" editable="NO" text="Bill Identifier" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-r9-tPs">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" indicatorStyle="white" editable="NO" text="Bill Identifier" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-r9-tPs">
                                                     <rect key="frame" x="0.0" y="0.0" width="67.5" height="80"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="10"/>
+                                                    <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ni-gt-vdO" userLabel="Description Label">
@@ -337,18 +344,16 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="UA7-r9-tPs" secondAttribute="bottom" constant="-8.5" id="cxd-BI-XGX"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="UA7-r9-tPs" firstAttribute="width" secondItem="0XJ-lx-wmT" secondAttribute="width" multiplier="0.2" id="Ooz-r3-0Ms"/>
+                                            <constraint firstItem="UA7-r9-tPs" firstAttribute="centerY" secondItem="0XJ-lx-wmT" secondAttribute="centerY" id="6Ji-zf-dFM"/>
+                                            <constraint firstItem="UA7-r9-tPs" firstAttribute="height" secondItem="0XJ-lx-wmT" secondAttribute="height" id="CLz-od-jjW"/>
+                                            <constraint firstItem="UA7-r9-tPs" firstAttribute="centerX" secondItem="0XJ-lx-wmT" secondAttribute="centerX" multiplier="0.2" id="RiE-ZF-Avb"/>
                                             <constraint firstItem="3Ni-gt-vdO" firstAttribute="trailing" secondItem="0XJ-lx-wmT" secondAttribute="trailing" id="V55-8E-Rog"/>
                                             <constraint firstItem="3Ni-gt-vdO" firstAttribute="width" secondItem="0XJ-lx-wmT" secondAttribute="width" multiplier="0.78" id="eYz-9k-Wbk"/>
-                                            <constraint firstItem="UA7-r9-tPs" firstAttribute="leading" secondItem="0XJ-lx-wmT" secondAttribute="leading" id="fDo-se-hM3"/>
-                                            <constraint firstItem="UA7-r9-tPs" firstAttribute="top" secondItem="0XJ-lx-wmT" secondAttribute="top" id="fbw-Yb-hEl"/>
                                             <constraint firstItem="3Ni-gt-vdO" firstAttribute="top" secondItem="0XJ-lx-wmT" secondAttribute="top" id="wTc-IY-h2J"/>
+                                            <constraint firstItem="UA7-r9-tPs" firstAttribute="width" secondItem="0XJ-lx-wmT" secondAttribute="width" multiplier="0.2" id="wjJ-Dz-q6b"/>
                                             <constraint firstItem="3Ni-gt-vdO" firstAttribute="bottom" secondItem="0XJ-lx-wmT" secondAttribute="bottom" id="xku-Qh-Fpr"/>
                                         </constraints>
                                         <connections>
@@ -365,22 +370,27 @@
                         </subviews>
                         <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="oYu-uU-Zp0" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="0Em-ue-FIo"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" id="3kc-xQ-mnd"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" id="75O-7e-Y5i"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="Byc-60-Atr"/>
+                            <constraint firstItem="oYu-uU-Zp0" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.1" id="DRc-01-Gec"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" id="JnK-HH-uQM"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.56" id="U12-vJ-TOr"/>
                             <constraint firstItem="fcE-Bj-c4x" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="XXD-yE-niT"/>
                             <constraint firstItem="fcE-Bj-c4x" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.26" id="hr4-mT-WfV"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" id="muc-Fd-wWn"/>
+                            <constraint firstItem="oYu-uU-Zp0" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="1.19" id="q6p-qc-eeA"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.09" id="qiU-ZT-xXt"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="vCl-5S-UtA"/>
                             <constraint firstItem="fcE-Bj-c4x" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="1.68" id="wAX-cR-WBb"/>
                             <constraint firstItem="fcE-Bj-c4x" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" multiplier="0.9" id="yLY-14-bXp"/>
+                            <constraint firstItem="oYu-uU-Zp0" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" multiplier="0.95" id="yiS-pG-c7V"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="BillsTableView" destination="fcE-Bj-c4x" id="V68-DJ-uKF"/>
+                        <outlet property="senatorBioTextView" destination="oYu-uU-Zp0" id="9xe-Ce-CFK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTH-X1-PLg" userLabel="First Responder" sceneMemberID="firstResponder"/>

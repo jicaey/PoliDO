@@ -11,10 +11,14 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var billsTableView: UITableView!
+    @IBOutlet weak var senatorBioTextView: UITextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let newText = "This is a test of the things I'm doing blag blag blah. It took three times to reach the h"
+        senatorBioTextView.update(text: newText)
         
         // TODO: Move
 //        billsTableView.rowHeight = UITableViewAutomaticDimension

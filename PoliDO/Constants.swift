@@ -46,14 +46,14 @@ struct Image {
 struct Text {
     static let billInformation = [
         "One\nTwo\nFour",
-        "One\nTwo\nFour\nThree\n Five",
+        "One\nTwo\nFour\nThree\nFive",
         "One",
-        "One\nTwo\nFour\nThree\n Five",
+        "One\nTwo\nFour\nThree\nFive",
         "One\nTwo\nFour\nThree",
         "One\nTwo\nFour\nThree",
         "One",
         "One\nTwo",
-        "One\nTwo\nFour\nThree\n Five"
+        "One\nTwo\nFour\nThree\nFive"
     ]
     static let billDescription = [
         "One", "Two", "Three", "Four", "Five"
