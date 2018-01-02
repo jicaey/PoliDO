@@ -10,8 +10,15 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var billsTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO: Move
+//        billsTableView.rowHeight = UITableViewAutomaticDimension
+//        billsTableView.estimatedRowHeight = 200
     }
 }
 
@@ -19,16 +26,18 @@ class HomeViewController: UIViewController {
 // MARK: - BillsTableView
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        
+        //Testing
+        return Text.billDescription.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifer.billsTableView, for: indexPath) as! BillsTableViewCell
-        
+
         // Testing
-        cell.descriptionLabel.text = "bill dones the sand theng nns keaon djs ehiir kans neh wkne rkrit abhs jah e rhf sushd kdi kej whsy aksj rhttu s bshdyeu hasusdhge bill dones the sand theng nns keaon djs ehiir kans neh wkne rkrit abhs jah e rhf sushd kdi kej whsy aksj rhttu s bshdyeu hasusdhge"
-        cell.billNameLabel.text = "S723"
-        cell.dateLabel.text = "Nov 15, 1983"
+        cell.billInformationTextView.text = Text.billInformation[indexPath.row]
+        cell.billDescriptionLabel.text = Text.billDescription[indexPath.row]
+        
         
         return cell
     }
