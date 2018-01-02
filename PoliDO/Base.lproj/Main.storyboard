@@ -384,8 +384,60 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycV-C4-tpn">
+                                                    <rect key="frame" x="5" y="2.5" width="40" height="10"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flg-1s-ftX">
+                                                    <rect key="frame" x="4.5" y="12.5" width="40" height="10"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wM-41-OqU">
+                                                    <rect key="frame" x="4.5" y="37.5" width="40" height="10"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voted:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILW-HE-GfP">
+                                                    <rect key="frame" x="5" y="27.5" width="40" height="10"/>
+                                                    <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="2wM-41-OqU" firstAttribute="height" secondItem="JFO-7t-30u" secondAttribute="height" multiplier="0.2" id="7Mw-sY-UZ7"/>
+                                            <constraint firstItem="Flg-1s-ftX" firstAttribute="width" secondItem="JFO-7t-30u" secondAttribute="width" multiplier="0.8" id="N8a-7f-9cq"/>
+                                            <constraint firstItem="Flg-1s-ftX" firstAttribute="centerY" secondItem="JFO-7t-30u" secondAttribute="centerY" multiplier="0.7" id="PFI-ed-Be0"/>
+                                            <constraint firstItem="ILW-HE-GfP" firstAttribute="centerY" secondItem="JFO-7t-30u" secondAttribute="centerY" multiplier="1.3" id="Y5Z-pD-MD6"/>
+                                            <constraint firstItem="ycV-C4-tpn" firstAttribute="width" secondItem="JFO-7t-30u" secondAttribute="width" multiplier="0.8" id="ZNv-NA-E9l"/>
+                                            <constraint firstItem="ycV-C4-tpn" firstAttribute="centerX" secondItem="JFO-7t-30u" secondAttribute="centerX" id="gwL-kP-NEt"/>
+                                            <constraint firstItem="ycV-C4-tpn" firstAttribute="height" secondItem="JFO-7t-30u" secondAttribute="height" multiplier="0.2" id="l0G-vD-iQE"/>
+                                            <constraint firstItem="Flg-1s-ftX" firstAttribute="centerX" secondItem="JFO-7t-30u" secondAttribute="centerX" id="lQA-2O-VZC"/>
+                                            <constraint firstItem="Flg-1s-ftX" firstAttribute="height" secondItem="JFO-7t-30u" secondAttribute="height" multiplier="0.2" id="n9U-vG-RFe"/>
+                                            <constraint firstItem="2wM-41-OqU" firstAttribute="centerX" secondItem="JFO-7t-30u" secondAttribute="centerX" id="nT9-RP-vOP"/>
+                                            <constraint firstItem="2wM-41-OqU" firstAttribute="centerY" secondItem="JFO-7t-30u" secondAttribute="centerY" multiplier="1.7" id="noI-0G-gMY"/>
+                                            <constraint firstItem="ILW-HE-GfP" firstAttribute="centerX" secondItem="JFO-7t-30u" secondAttribute="centerX" id="qZh-sG-fub"/>
+                                            <constraint firstItem="ycV-C4-tpn" firstAttribute="centerY" secondItem="JFO-7t-30u" secondAttribute="centerY" multiplier="0.3" id="rS6-d7-eRq"/>
+                                            <constraint firstItem="ILW-HE-GfP" firstAttribute="width" secondItem="JFO-7t-30u" secondAttribute="width" multiplier="0.8" id="sha-8Z-38H"/>
+                                            <constraint firstItem="ILW-HE-GfP" firstAttribute="height" secondItem="JFO-7t-30u" secondAttribute="height" multiplier="0.2" id="vjT-qh-vmn"/>
+                                            <constraint firstItem="2wM-41-OqU" firstAttribute="width" secondItem="JFO-7t-30u" secondAttribute="width" multiplier="0.8" id="z18-xF-9GK"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="billDateLabel" destination="Flg-1s-ftX" id="Aki-Fv-29n"/>
+                                            <outlet property="billNumberLabel" destination="ycV-C4-tpn" id="Z3h-t0-dhU"/>
+                                            <outlet property="repDecisionLabel" destination="2wM-41-OqU" id="lfB-EW-rEn"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
