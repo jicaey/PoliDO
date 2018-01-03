@@ -10,10 +10,16 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var billsTableView: UITableView!
+    
     @IBOutlet weak var senatorBioTextView: UITextView!
     @IBOutlet weak var senatorProfileBackgroundImageView: UIImageView!
-    
     @IBOutlet weak var senatorProfileImageView: UIImageView!
+    
+    @IBOutlet weak var senatorEmailLabel: UILabel!
+    @IBOutlet weak var senatorAddressTextView: UITextView!
+    @IBOutlet weak var senatorPhoneLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
