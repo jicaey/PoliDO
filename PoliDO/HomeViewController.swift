@@ -9,20 +9,17 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
     @IBOutlet weak var billsTableView: UITableView!
     @IBOutlet weak var senatorBioTextView: UITextView!
+    @IBOutlet weak var senatorProfileBackgroundImageView: UIImageView!
     
-    
+    @IBOutlet weak var senatorProfileImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Testing
         let newText = "This is a test of the things I'm doing blag blag blah. It took three times to reach the h"
         senatorBioTextView.update(text: newText)
-        
-        // TODO: Move
-//        billsTableView.rowHeight = UITableViewAutomaticDimension
-//        billsTableView.estimatedRowHeight = 200
     }
 }
 
@@ -42,12 +39,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         cell.billInformationTextView.text = Text.billInformation[indexPath.row]
         cell.billDescriptionLabel.text = Text.billDescription[indexPath.row]
         
-        
         return cell
     }
 }
-
-
 
 // MARK: - RepCollectionView
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -61,7 +55,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifer.repCollectionView, for: indexPath) as! RepCollectionViewCell
         
         // Testing
-        cell.contentView.backgroundColor = UIColor.green
+        cell.contentView.backgroundColor = Color.blueAccent
         
         // TODO: Move
         cell.repThumbnailImageView.image = Image.testImages[indexPath.item]
