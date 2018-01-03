@@ -15,6 +15,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var senatorProfileBackgroundImageView: UIImageView!
     @IBOutlet weak var senatorProfileImageView: UIImageView!
     
+    @IBOutlet weak var senatorNameLabel: UILabel!
+    @IBOutlet weak var senatorTitleLabel: UILabel!
+    @IBOutlet weak var senatorDistrictLabel: UILabel!
     @IBOutlet weak var senatorEmailLabel: UILabel!
     @IBOutlet weak var senatorAddressTextView: UITextView!
     @IBOutlet weak var senatorPhoneLabel: UILabel!
@@ -25,7 +28,10 @@ class HomeViewController: UIViewController {
         
         // Testing
         let newText = "This is a test of the things I'm doing blag blag blah. It took three times to reach the h"
+        let testAddy = "123 Someplace Safe Street\nBoston, NY 22112"
         senatorBioTextView.update(text: newText)
+        senatorAddressTextView.update(text: testAddy)
+        
     }
 }
 
