@@ -32,7 +32,6 @@ struct Tag {
 }
 
 // MARK: - Test
-
 struct Image {
     static let kitt = UIImage.init(named: "kitt")
     static let trump = UIImage.init(named: "trump")
@@ -45,25 +44,23 @@ struct Image {
 
 struct Text {
     static let billInformation = [
-        "One\nTwo\nFour",
-        "One\nTwo\nFour\nThree\nFive",
-        "One",
-        "One\nTwo\nFour\nThree\nFive",
-        "One\nTwo\nFour\nThree",
-        "One\nTwo\nFour\nThree",
-        "One",
-        "One\nTwo",
-        "One\nTwo\nFour\nThree\nFive"
+        "S792\n27 July 2017\nPassed",
+        "S792\n27 July 2017\nPassed\nVoted: Yes\nSponsored",
+        "S792",
+        "S792\n27 July 2017\nPassed\nVoted: No\nSponsored",
+        "S792\n27 July 2017\nPassed\nVoted: No",
+        "S792\n27 July 2017\nPassed\nVoted: No",
+        "S792",
+        "S792\n27 July 2017",
+        "S792\n27 July 2017\nPassed\nVoted: Yes\nSponsored"
     ]
     static let billDescription = [
-        "One", "Two", "Three", "Four", "Five"
-        
-//        "Integer ac funky fresh at brizzle shizznit crackalackin",
-//        "",
-//        "Lorem ipsizzle dolizzle dope ma nizzle, fo shizzle adipiscing fo shizzle my nizzle. Nullizzle sapizzle velit, check it out volutpat, suscipizzle quis, gravida vel, get down get down. Pellentesque tellivizzle funky fresh. Shiznit erizzle. Fusce at dolizzle dapibus black tempizzle dang. Mauris da bomb nibh sure turpizzle. Break it down izzle tortor. Pellentesque i'm in the shizzle rhoncizzle nisi. In hac habitasse platea dictumst. Sure dapibizzle. Curabitur tellus urna, pretizzle own yo', away ac, eleifend bling bling, nunc. Gangsta suscipizzle. Integer semper crunk sizzle purus.",
-//        "Etiam that's the shizzle magna gangsta augue mammasay mammasa mamma oo sa accumsizzle. Aenizzle shit est. Vivamizzle ghetto dolizzle, viverra vitae",
-//        "Sizzle ullamcorpizzle. Own yo' i'm in the shizzle massa a maurizzle. Vestibulizzle shizzlin dizzle nizzle primizzle in sizzle orci fizzle izzle dizzle posuere cubilia Curae; Cool vestibulum. Pellentesque black break yo neck, yall tristique black shit sizzle et phat famizzle gangsta turpis da bomb. Check it out fizzle hendrerit fo",
-//        "Rizzle gangster tortor izzle fizzle ultricizzle consequat. In convallis, pot i'm in the shizzle dignissizzle go to hizzle, black lorizzle luctizzle pede, a blandit the bizzle dolor sizzle check out this. Pellentesque ac fo shizzle mah nizzle fo rizzle, mah home g-dizzle nec elizzle for sure tincidunt. Curabitur fo shizzle my nizzle nisi, pulvinizzle phat, dizzle away, tincidunt in, metizzle. Crazy sizzle neque. Cool break yo neck, yall dolor pizzle amet, fo shizzle shiz elit. Maecenas things elizzle. Dawg . Pimpin' izzle erat vitae velizzle aliquet dictizzle. In yo mamma nisi rizzle bizzle crunk. Check out this dizzle. Nunc gangster ante izzle neque lacinia sagittis. Get down get down izzle massa izzle dizzle pharetra lobortis. Cool enim est, i saw beyonces tizzles and my pizzle went crizzle pulvinar, ornare owned, check it out shit, hizzle. Vivamizzle eget crazy izzle crunk tempizzle. Curabitur izzle yo mamma quizzle mammasay mammasa mamma oo sa ornare bizzle."
+        "Integer ac funky fresh at brizzle shizznit crackalackin",
+        "",
+        "Lorem ipsizzle dolizzle dope ma nizzle, fo shizzle adipiscing fo shizzle my nizzle. Nullizzle sapizzle velit, check it out volutpat, suscipizzle quis, gravida vel, get down get down. Pellentesque tellivizzle funky fresh. Shiznit erizzle. Fusce at dolizzle dapibus black tempizzle dang. Mauris da bomb nibh sure turpizzle. Break it down izzle tortor. Pellentesque i'm in the shizzle rhoncizzle nisi. In hac habitasse platea dictumst. Sure dapibizzle. Curabitur tellus urna, pretizzle own yo', away ac, eleifend bling bling, nunc. Gangsta suscipizzle. Integer semper crunk sizzle purus.",
+        "Etiam that's the shizzle magna gangsta augue mammasay mammasa mamma oo sa accumsizzle. Aenizzle shit est. Vivamizzle ghetto dolizzle, viverra vitae",
+        "Sizzle ullamcorpizzle. Own yo' i'm in the shizzle massa a maurizzle. Vestibulizzle shizzlin dizzle nizzle primizzle in sizzle orci fizzle izzle dizzle posuere cubilia Curae; Cool vestibulum. Pellentesque black break yo neck, yall tristique black shit sizzle et phat famizzle gangsta turpis da bomb. Check it out fizzle hendrerit fo",
+        "Rizzle gangster tortor izzle fizzle ultricizzle consequat. In convallis, pot i'm in the shizzle dignissizzle go to hizzle, black lorizzle luctizzle pede, a blandit the bizzle dolor sizzle check out this. Pellentesque ac fo shizzle mah nizzle fo rizzle, mah home g-dizzle nec elizzle for sure tincidunt. Curabitur fo shizzle my nizzle nisi, pulvinizzle phat, dizzle away, tincidunt in, metizzle. Crazy sizzle neque. Cool break yo neck, yall dolor pizzle amet, fo shizzle shiz elit. Maecenas things elizzle. Dawg . Pimpin' izzle erat vitae velizzle aliquet dictizzle. In yo mamma nisi rizzle bizzle crunk. Check out this dizzle. Nunc gangster ante izzle neque lacinia sagittis. Get down get down izzle massa izzle dizzle pharetra lobortis. Cool enim est, i saw beyonces tizzles and my pizzle went crizzle pulvinar, ornare owned, check it out shit, hizzle. Vivamizzle eget crazy izzle crunk tempizzle. Curabitur izzle yo mamma quizzle mammasay mammasa mamma oo sa ornare bizzle."
     ]
 }
 

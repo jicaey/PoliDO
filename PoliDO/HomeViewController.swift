@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var billsTableView: UITableView!
+    @IBOutlet weak var billsCounterLabel: UILabel!
     
     @IBOutlet weak var senatorBioTextView: UITextView!
     @IBOutlet weak var senatorProfileBackgroundImageView: UIImageView!
@@ -31,10 +32,8 @@ class HomeViewController: UIViewController {
         let testAddy = "123 Someplace Safe Street\nBoston, NY 22112"
         senatorBioTextView.update(text: newText)
         senatorAddressTextView.update(text: testAddy)
-        
     }
 }
-
 
 // MARK: - BillsTableView
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
@@ -52,6 +51,12 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         cell.billDescriptionLabel.text = Text.billDescription[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let rowHeight = tableView.frame.height
+        
+        return rowHeight
     }
 }
 

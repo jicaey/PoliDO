@@ -288,7 +288,7 @@
                                 <rect key="frame" x="10" y="363.5" width="356.5" height="66.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="ApexNew-BookItalic" family="Apex New" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-HC-e2f" userLabel="Rep Collection View">
@@ -342,16 +342,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="337.5" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" indicatorStyle="white" editable="NO" text="Bill Identifier" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-r9-tPs">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" scrollEnabled="NO" indicatorStyle="white" editable="NO" text="Bill Identifier" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-r9-tPs">
                                                     <rect key="frame" x="0.0" y="0.0" width="67.5" height="80"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ni-gt-vdO" userLabel="Description Label">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ni-gt-vdO" userLabel="Description Label">
                                                     <rect key="frame" x="74.5" y="0.0" width="263" height="80"/>
-                                                    <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -383,7 +383,7 @@
                                     <outlet property="delegate" destination="qHO-DU-wip" id="F3s-VK-weW"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="tOh-Gk-NIV" userLabel="Senator Profile Background Image View">
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="tOh-Gk-NIV" userLabel="Senator Profile Background Image View">
                                 <rect key="frame" x="197" y="235.5" width="169" height="123"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tOh-Gk-NIV" secondAttribute="height" multiplier="1291:935" id="nPf-hc-xaU"/>
@@ -432,6 +432,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-w6-hS9">
+                                <rect key="frame" x="161.5" y="112.5" width="53.5" height="15"/>
+                                <fontDescription key="fontDescription" name="ApexNew-Light" family="Apex New" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="593" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQA-c7-mos">
+                                <rect key="frame" x="337" y="436" width="19.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rQA-c7-mos" secondAttribute="height" multiplier="11:7" id="2a0-gE-w3D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ApexNew-Book" family="Apex New" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -439,6 +454,7 @@
                             <constraint firstItem="V2N-1M-Jds" firstAttribute="trailing" secondItem="tOh-Gk-NIV" secondAttribute="trailing" multiplier="0.99" id="2Dn-F9-9gH"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" id="3kc-xQ-mnd"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" id="75O-7e-Y5i"/>
+                            <constraint firstItem="bLy-w6-hS9" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="80A-ii-11g"/>
                             <constraint firstItem="2DF-rg-gsq" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="1.02" id="BSC-kp-yWW"/>
                             <constraint firstItem="6N7-HC-e2f" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" id="Byc-60-Atr"/>
                             <constraint firstItem="oYu-uU-Zp0" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.1" id="DRc-01-Gec"/>
@@ -447,6 +463,7 @@
                             <constraint firstItem="Kvs-nf-na9" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.81" id="LU7-k7-fV6"/>
                             <constraint firstItem="tOh-Gk-NIV" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.89" id="LeE-wz-Yb1"/>
                             <constraint firstItem="0YU-h3-DwW" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" multiplier="0.4" id="NSf-0D-edo"/>
+                            <constraint firstItem="bLy-w6-hS9" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.36" id="NrY-gH-PV6"/>
                             <constraint firstItem="5ZE-l4-xd0" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" multiplier="1.5" id="Pny-FK-1QO"/>
                             <constraint firstItem="V2N-1M-Jds" firstAttribute="bottom" secondItem="tOh-Gk-NIV" secondAttribute="bottom" multiplier="0.99" id="Qvl-rc-Xd9"/>
                             <constraint firstItem="vic-OA-oOC" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.76" id="RtZ-DE-hZI"/>
@@ -460,11 +477,13 @@
                             <constraint firstItem="0YU-h3-DwW" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.87" id="auq-Fb-PjJ"/>
                             <constraint firstItem="0YU-h3-DwW" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" multiplier="0.82" id="dFy-YY-QZ7"/>
                             <constraint firstItem="2DF-rg-gsq" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" multiplier="0.4" id="fib-ZX-Pft"/>
+                            <constraint firstItem="rQA-c7-mos" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="1.325" id="h7a-jQ-tU7"/>
                             <constraint firstItem="fcE-Bj-c4x" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.26" id="hr4-mT-WfV"/>
                             <constraint firstItem="tOh-Gk-NIV" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" multiplier="1.5" id="i0z-4r-3NX"/>
                             <constraint firstItem="8Ze-t1-FGS" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" multiplier="0.06" id="kif-Ql-iBi"/>
                             <constraint firstItem="V2N-1M-Jds" firstAttribute="height" secondItem="tOh-Gk-NIV" secondAttribute="height" multiplier="0.75" id="l3H-1d-KqW"/>
                             <constraint firstItem="wcv-eV-Gql" firstAttribute="height" secondItem="UDq-y0-Ud1" secondAttribute="height" id="muc-Fd-wWn"/>
+                            <constraint firstItem="rQA-c7-mos" firstAttribute="centerX" secondItem="UDq-y0-Ud1" secondAttribute="centerX" multiplier="1.85" id="mya-Hw-MmE"/>
                             <constraint firstItem="5ZE-l4-xd0" firstAttribute="width" secondItem="UDq-y0-Ud1" secondAttribute="width" multiplier="0.4" id="pFi-z3-sRl"/>
                             <constraint firstItem="8Ze-t1-FGS" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="0.945" id="pYn-Vx-BwL"/>
                             <constraint firstItem="oYu-uU-Zp0" firstAttribute="centerY" secondItem="UDq-y0-Ud1" secondAttribute="centerY" multiplier="1.19" id="q6p-qc-eeA"/>
@@ -480,6 +499,7 @@
                     </view>
                     <connections>
                         <outlet property="BillsTableView" destination="fcE-Bj-c4x" id="V68-DJ-uKF"/>
+                        <outlet property="billsCounterLabel" destination="rQA-c7-mos" id="Y5B-9z-t4T"/>
                         <outlet property="senatorAddressTextView" destination="8Ze-t1-FGS" id="Lgf-T0-2QC"/>
                         <outlet property="senatorBioTextView" destination="oYu-uU-Zp0" id="9xe-Ce-CFK"/>
                         <outlet property="senatorDistrictLabel" destination="Kvs-nf-na9" id="cYl-zi-Rb3"/>
@@ -501,13 +521,13 @@
         <image name="addLocationButtonBackground" width="176" height="36"/>
         <image name="aliasTextFieldBackground" width="281" height="25"/>
         <image name="backgroundImage" width="375" height="667"/>
-        <image name="demBackgroundImage" width="645" height="467"/>
         <image name="emailTextFieldBackground" width="281" height="20"/>
         <image name="homeBackgroundImage" width="414" height="736"/>
         <image name="kitt" width="56" height="56"/>
         <image name="loginButtonBackground" width="281" height="43"/>
         <image name="logo" width="177" height="65"/>
         <image name="passwordTextFieldBackground" width="281" height="25"/>
+        <image name="repBackgroundImage" width="645" height="467"/>
         <image name="submitButtonBackground" width="282" height="44"/>
         <image name="textFieldBackground" width="281" height="43"/>
     </resources>
